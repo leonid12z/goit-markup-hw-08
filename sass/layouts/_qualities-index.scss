@@ -1,0 +1,57 @@
+.qualities{
+    padding-top: 94px;
+
+    &__hdr{
+    font-weight: bold;
+
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+
+    color: var(--accent-color);   
+    }
+
+    &__text{
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+
+      color: var(--back-color);  
+    }
+
+    &__list {
+      display: flex;
+
+  .qualities__item:not(:last-child) {
+      margin-right: 30px;
+}
+
+  .qualities__item{
+     width: 270px; 
+  }
+ }
+
+  &__antenna,
+  &__clock,
+  &__diagram,
+  &__astronaut {
+
+    width: 70px;
+    height: 70px;
+  }
+
+  &__div-antenna,
+  &__div-clock,
+  &__div-diagram,
+  &__div-astronaut {
+    background: var(--color-fill);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 4px;
+
+    padding: 25px 100px;
+    margin-bottom: 30px;
+  }
+}

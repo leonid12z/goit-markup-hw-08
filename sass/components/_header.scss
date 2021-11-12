@@ -1,0 +1,122 @@
+.header {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    font-family: 'Raleway';
+    font-weight: bold;
+
+    font-size: 26px;
+    line-height: 1.19;
+
+    letter-spacing: 0.03em;
+  }
+
+  &__logo-web {
+    color: var(--primary-text-color);
+  }
+
+  &__logo-studio {
+    color: var(--accent-color);
+  }
+
+  &__link {
+    font-weight: 500;
+    display: block;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0px;
+
+    color: var(--accent-color);
+    position: relative;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--primary-text-color);
+    }
+  }
+
+  &__link--current-page {
+    color: var(--primary-text-color);
+
+    &::after {
+      display: inline-block;
+      position: absolute;
+      content: '';
+
+      width: 100%;
+      height: 4px;
+      top: 76px;
+      left: 0;
+
+      border-radius: 2px;
+      background-color: var(--primary-text-color);
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin-left: 93px;
+
+    & .navigation__item:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    & .navigation__link {
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+
+  margin-left: auto;
+
+  & .contacts__item,
+  .contacts__link :not(:last-child) {
+    margin-left: 30px;
+  }
+
+  &__item .contacts__link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    fill: var(--back-color);
+  }
+
+  &__link {
+    font-weight: 500;
+    color: var(--back-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--primary-text-color);
+      fill: var(--primary-text-color);
+    }
+  }
+
+  .envelope,
+  .vector {
+    margin-right: 10px;
+  }
+}

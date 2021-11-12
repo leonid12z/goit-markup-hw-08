@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашние задание #7</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css"/>
+</head>
+
+<!-- Шапка -->
+<header class="header">
+    <div class="container header__container">
+        <nav class="navigation">
+            <a href="./index.html" class="navigation__logo">
+                <span class="navigation__logo-web">Web</span>
+                <span class="navigation__logo-studio">Studio</span>
+            </a>
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="./index.html" class="navigation__link">Студия</a></li>
+                <li class="navigation__item"><a href="./portolio.html" class="navigation__link navigation__link--current-page">Портфолио</a></li>
+                <li class="navigation__item"><a href="./kontakt.html" class="navigation__link"> Контакты</a></li>
+            </ul>
+        </nav>
+        <ul class="contacts">
+            <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="contacts__link information">
+                    <svg class="envelope" width="16" height="12">
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com</a>
+            </li>
+            <li class="contacts__item">
+                <a href="tel:+380961111111" class="contacts__link telefone">
+                    <svg class="vector" width="16" height="12">
+                        <use href="./images/icons.svg#icon-vector"></use>
+                    </svg>
+                    +38 096 11 11 111</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<!-- Кнопки -->
+<main>
+    <section class="filter-projects">
+    <div class="container">
+    <ul class="filter">   
+    <li class="filter__item"><button type="button" class="filter__btn">Все</button></li>
+    <li class="filter__item"><button type="button" class="filter__btn">Веб-сайты</button></li>
+    <li class="filter__item"><button type="button" class="filter__btn">Приложение</button></li>
+    <li class="filter__item"><button type="button" class="filter__btn">Дизайн</button></li>
+    <li class="filter__item"><button type="button" class="filter__btn">Маркетинг</button></li>
+    </ul>
+
+    <!-- Картинки-продукт -->
+    <div class="projects-div__container">
+
+     <ul class="projects">  
+        <li class="projects__item">
+            <a class="projects__card">
+            <div class="projects__card-thumb">
+            <img src="./images/texno.jpg" width="370" alt="Портфолио_люди" class="img">
+            <div class="projects__card-info">
+                <p class="projects__card-text">Технокряк это современная площадка распространения коронавируса. 
+                Компании используют эту платформу для цифрового
+                шпионажа и атак на защищённые сервера конкурентов.</p>
+            </div>
+            </div>
+            <div class="projects__card-content">
+            <h2 class="projects__hdr">Технокряк</h2>
+            <p class="projects__dscrpt">Веб-сайты</p>
+        </div>
+        </a>
+        </li>
+
+        <li class="projects__item">
+            <a class="projects__card">
+            <div class="projects__card-thumb">
+            <img src="./images/newOrlean.jpg" width="370" alt="Баскетболисты" class="img">
+            <div class="projects__card-info"></div>
+            </div>
+            <div class="projects__card-content">
+            <h2 class="projects__hdr">Постер New Orlean vs Golden Star</h2>
+            <p class="projects__dscrpt">Дизайн</p>
+       </div>
+       </a> 
+       </li>
+
+        <li class="projects__item">
+            <a class="projects__card">
+            <div class="projects__card-thumb">
+            <img src="./images/seafood.jpg" width="370" alt="Рыба_ресторан" class="img">
+            <div class="projects__card-info"></div>
+            </div>
+            <div class="projects__card-content">
+            <h2 class="projects__hdr">Ресторан Seafood</h2>
+            <p class="projects__dscrpt">Приложение</p>
+        </div>
+        </a>
+        </li>
+
+        <li class="projects__item">
+            <a class="projects__card">
+            <div class="projects__card-thumb">
+            <img src="./images/prime.jpg" width="370" alt="Наушники" class="img">
+            <div class="projects__card-info"></div>
+            </div>
+            <div class="projects__card-content">
+            <h2 class="projects__hdr">Проект Prime</h2>
+            <p class="projects__dscrpt">Маркетинг</p>
+        </div>
+        </a>
+        </li>
+
+        <li class="projects__item">
+            <a class="projects__card">
+            <div class="projects__card-thumb">
+            <img src="./images/boxes.jpg" width="370" alt="Каробки_белая_светло_коричневая" class="img">
+            <div class="projects__card-info"></div>
+            </div>
+            <div class="projects__card-content">
+            <h2 class="projects__hdr">Проект Boxes</h2>
+            <p class="projects__dscrpt">Приложение</p>
+        </div>
+        </a>
+        </li>
+
+        <li class="projects__item">
+            <a class="projects__card">
+            <div class="projects__card-thumb">
+            <img src="./images/inspiration.jpg" width="370" alt="Моноблок" class="img">
+            <div class="projects__card-info"></div>
+            </div>
+            <div class="projects__card-content">
+            <h2 class="projects__hdr">Inspiration has no Borders</h2>
+            <p class="projects__dscrpt">Веб-сайт</p>
+        </div>
+        </a>
+        </li>
+
+        <li class="projects__item">
+            <a class="projects__card">
+            <div class="projects__card-thumb">
+            <img src="./images/limited.jpg" width="370" alt="Книга" class="img">
+            <div class="projects__card-info"></div>
+            </div>
+            <div class="projects__card-content">
+            <h2 class="projects__hdr">Издание Limited Edition</h2>
+            <p class="projects__dscrpt">Дизайн</p>
+        </div>
+        </a>
+        </li>
+
+        <li class="projects__item">
+            <a class="projects__card">
+            <div class="projects__card-thumb">
+            <img src="./images/laB.jpg" width="370" alt="Лейба" class="img">
+            <div class="projects__card-info"></div>
+            </div>
+            <div class="projects__card-content">
+            <h2 class="projects__hdr">Проект LAB</h2>
+            <p class="projects__dscrpt">Маркетинг</p>
+        </div>
+        </a>
+        </li>
+
+        <li class="projects__item">
+            <a class="projects__card">
+            <div class="projects__card-thumb">
+            <img src="./images/growing.jpg" width="370" alt="Набор_на_ноутбуке" class="img">
+            <div class="projects__card-info"></div>
+            </div>
+            <div class="projects__card-content">
+            <h2 class="projects__hdr">Growing Business</h2>
+            <p class="projects__dscrpt">Приложение</p>
+        </div>
+        </a>
+        </li>
+    </ul>
+</div>
+</div>
+</section>
+</main>
+
+<!-- Футер -->
+<footer class="page-footer">
+    <div class="ftr-contacts container">
+        <div class="ftr-contacts__div">
+            <a href="#" class="ftr-contacts__logotype">
+                <span class="ftr-contacts__logo-web">Web</span>
+                <span class="ftr-contacts__logo-studio">Studio</span>
+            </a>
+
+            <address class="address">
+                <p class="address__text">г.Киев, пр-т Леси Украинки, 26</p>
+                <a href="mailto:info@example.com" class="address__inform">info@example.com</a>
+                <a href="tel:+380991111111" class="address__inform">+38 099 111 11 11</a>
+            </address>
+        </div>
+
+        <div class="ftr-social">
+            <h3 class="ftr-social__hdr">ПРИСОЕДИНЯЙТЕСЬ</h3>
+
+            <ul class="ftr-social__list">
+                <li class="ftr-social__item">
+                    <a class="ftr-social__link">
+                        <svg class="instagram" width="20px" height="20px">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="ftr-social__item">
+                    <a class="ftr-social__link">
+                        <svg class="twitter" width="20px" height="20px">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="ftr-social__item">
+                    <a class="ftr-social__link">
+                        <svg class="facebook" width="20px" height="20px">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="ftr-social__item">
+                    <a class="ftr-social__link">
+                        <svg class="linkedin" width="20px" height="20px">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Подпишитесь на рассылку -->
+        <div class="subscribe-div">
+            <form class="subscribe-div__form">
+
+                <h3 class="subscribe-div__hdr">ПОДПИШИСЬ НА РАССЫЛКУ</h3>
+
+                    <input type="text" class="subscribe-div__input" name="E-mail" placeholder="E-mail" />
+                    <button class="subscribe-div__btn" type="submit">
+                        Подписаться
+                        <svg class="subscribe-div__icon" width="24px" height="24px">
+                            <use href="./images/icons_svg.svg#icon-icon"></use>
+                        </svg>
+                        </button>
+                  </form>  
+             </div>
+          </div>
+     </footer>
+   </body>
+</html>
