@@ -15,8 +15,8 @@
 
 <body>
     <!-- Шапка -->
-    <header class="header">
-        <div class="container header__container">
+    <header class="page-header">
+        <div class="container header__container main-nav-div">
 
         <nav class="navigation">
            <a href="./index.html" class="navigation__logo">
@@ -24,12 +24,19 @@
             <span class="navigation__logo-studio">Studio</span>
            </a>
 
+        <button type="button" class="navigation__mobile-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="24" height="16">
+                <use href="./svg/menu-close.svg#icon-menu"></use>
+            </svg>
+        </button>
+
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--current-page">Студия</a></li>
                 <li class="navigation__item"><a href="./portolio.html" class="navigation__link">Портфолио</a></li>
                 <li class="navigation__item"><a href="./kontakt.html" class="navigation__link"> Контакты</a></li>
             </ul>
             </nav>
+
             <ul class="contacts">
                 <li class="contacts__item">
                     <a href="mailto:info@devstudio.com" class="contacts__link information">
@@ -37,6 +44,7 @@
                             <use href="./images/icons.svg#icon-envelope"></use></svg>
                             info@devstudio.com</a>
                 </li>
+
                 <li class="contacts__item">
                     <a href="tel:+380961111111" class="contacts__link telefone">
                         <svg class="vector" width="16" height="12">
@@ -48,7 +56,7 @@
     </header>
 
     <main>
-        <!-- Эффектное решение -->
+        <!-- Герой -->
         <section class="hero">
             <div class="container hero__div">
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
