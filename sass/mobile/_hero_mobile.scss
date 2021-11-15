@@ -11,7 +11,7 @@
         margin: 0 auto;
 
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/img-1600.jpg');
+        url('../images/hero-mobile@1x.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -21,7 +21,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/img-3200.jpg');
+        url('../images/hero-mobile@2x.jpg');
 
         &__div {
             position: absolute;

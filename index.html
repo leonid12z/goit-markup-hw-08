@@ -33,7 +33,7 @@
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--current-page">Студия</a></li>
                 <li class="navigation__item"><a href="./portolio.html" class="navigation__link">Портфолио</a></li>
-                <li class="navigation__item"><a href="./kontakt.html" class="navigation__link"> Контакты</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"> Контакты</a></li>
             </ul>
             </nav>
 
@@ -41,14 +41,14 @@
                 <li class="contacts__item">
                     <a href="mailto:info@devstudio.com" class="contacts__link information">
                         <svg class="envelope" width="16" height="12">
-                            <use href="./images/icons.svg#icon-envelope"></use></svg>
+                            <use href="./svg/icons.svg#icon-envelope"></use></svg>
                             info@devstudio.com</a>
                 </li>
 
                 <li class="contacts__item">
                     <a href="tel:+380961111111" class="contacts__link telefone">
                         <svg class="vector" width="16" height="12">
-                            <use href="./images/icons.svg#icon-vector"></use></svg>
+                            <use href="./svg/icons.svg#icon-vector"></use></svg>
                         +38 096 11 11 111</a>
                    </li>
                </ul>
@@ -60,6 +60,7 @@
         <section class="hero">
             <div class="container hero__div">
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+
             <!-- Modal -->
             <button data-modal-open  type="button" class="hero__button-form">Заказ услугу</button>
             </div>
@@ -489,13 +490,63 @@
                     <input class="checkbox" type="checkbox" id="checkbox" name="checkbox" required="required"
                         value="Соглашаюсь с рассылкой и принимаю" />
                     <span class="icon__chec"></span>
-                    <a class="chek__1">Соглашаюсь с рассылкой и принимаю </a>
+                    <a class="chek__1">Соглашаюсь с рассылкой и принимаю</a>
                     <a class="chek__2"><u>Условия договора</u></a>
                 </label>
                 <button class="submit__button" type="submit">Отправить</button>
             </form>
         </div>
     </div>
+
+    <div class="mobile-menu-container js-menu-container">
+        <button type="button" class="mobile-menu-container__close js-close-menu">
+            <svg width="19px" height="19px">
+                <use href="./svg/menu-close.svg#icon-close"></use>
+            </svg>
+        </button>
+    
+        <ul class="mobile-menu-container__list-nav">
+            <li class="mobile-menu-container__item-nav">
+                <a href="./index.html" class="mobile-menu-container__link">Студия</a>
+            </li>
+            <li class="mobile-menu-container__item-nav">
+                <a href="./portolio.html" class="mobile-menu-container__link">Портфолио</a>
+            </li>
+            <li class="mobile-menu-container__item-nav">
+                <a href="#" class="mobile-menu-container__link link-decor">Контакты</a>
+            </li>
+        </ul>
+    
+        <ul class="mobile-menu-container__list-contacts">
+            <li class="mobile-menu-container__item-contacts">
+                <a href="tel:+380961111111" class="mobile-menu-container__link-contacts-1">+380961111111</a>
+            </li>
+    
+            <li class="mobile-menu-container__item-contacts">
+                <a href="mailto:info@devstudio.com"
+                    class="mobile-menu-container__link-contacts-2">info@devstudio.com</a>
+            </li>
+        </ul>
+    
+        <ul class="mobile-menu-container__list-social">
+            <li class="mobile-menu-container__item-social">
+                <a href="./index.html" class="mobile-menu-container__link-social">Instagram</a>
+            </li>
+
+            <li class="mobile-menu-container__item-social">
+                <a href="./portolio.html" class="mobile-menu-container__link-social">Twitter</a>
+            </li>
+
+            <li class="mobile-menu-container__item-social">
+                <a href="#" class="mobile-menu-container__link-social">Facebook</a>
+            </li>
+
+            <li class="mobile-menu-container__item-social">
+                <a href="#" class="mobile-menu-container__link-social">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
