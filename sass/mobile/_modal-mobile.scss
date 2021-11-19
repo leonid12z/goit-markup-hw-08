@@ -217,7 +217,7 @@
     .modal-form__submit {
       display: flex;
       justify-content: center;
-    }
+    
 
     &-btn {
       width: 200px;
@@ -243,6 +243,7 @@
 
     &-btn:hover {
       background-color: var(--border-blu);
+      }
     }
   }
 }
